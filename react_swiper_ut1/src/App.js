@@ -1,8 +1,16 @@
 /*eslint-disable*/
-import "./App.css";
+import './App.scss';
+
+import { Slider } from './slider';
+import slidesImg from './mock.json';
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div>
+      <Slider slides={slidesImg} />
+      <Slider slides={slidesImg} />
+    </div>
+  );
 }
 
 export default App;
